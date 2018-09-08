@@ -10,7 +10,7 @@ See: https://github.com/Inumedia/SlackAPI
 
 This repo has some changes as follows:
 
-- Slack Real Time Messaging API example for C#
+- Add Slack Real Time Messaging API example for C#
   - https://github.com/ksasao/SlackAPI/blob/master/RealtimeExample/Program.cs
 - Support attachments propertiy, which is used by some service such as IFTTT
 - Add RawMessage propertiy to get raw JSON data from Slack
