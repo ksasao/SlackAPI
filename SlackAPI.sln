@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackAPI", "SlackAPI\SlackAPI.csproj", "{0C0A58A8-174E-4A4C-907B-C3569144D15D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackAPI.Tests", "SlackAPI.Tests\SlackAPI.Tests.csproj", "{C254F6FF-81D4-46DF-AA21-3D1A6456253B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackAPI.Console", "SlackAPI.Console\SlackAPI.Console.csproj", "{19140E48-E1A9-421D-86DB-5AF18EECFEF2}"
 EndProject
@@ -14,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{9FC74E78-2
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealtimeExample", "RealtimeExample\RealtimeExample.csproj", "{A1908DFD-F265-4FAC-B0B9-7582CDBFF636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackAPI.Tests", "SlackAPI.Tests\SlackAPI.Tests.csproj", "{C254F6FF-81D4-46DF-AA21-3D1A6456253B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,16 +27,23 @@ Global
 		{0C0A58A8-174E-4A4C-907B-C3569144D15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C0A58A8-174E-4A4C-907B-C3569144D15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C0A58A8-174E-4A4C-907B-C3569144D15D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19140E48-E1A9-421D-86DB-5AF18EECFEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19140E48-E1A9-421D-86DB-5AF18EECFEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19140E48-E1A9-421D-86DB-5AF18EECFEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19140E48-E1A9-421D-86DB-5AF18EECFEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1908DFD-F265-4FAC-B0B9-7582CDBFF636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1908DFD-F265-4FAC-B0B9-7582CDBFF636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1908DFD-F265-4FAC-B0B9-7582CDBFF636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1908DFD-F265-4FAC-B0B9-7582CDBFF636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C254F6FF-81D4-46DF-AA21-3D1A6456253B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {462F22EF-31F9-4F0C-BF71-980AEA5E57BD}
 	EndGlobalSection
 EndGlobal

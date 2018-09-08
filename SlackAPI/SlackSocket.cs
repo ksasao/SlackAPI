@@ -245,6 +245,7 @@ namespace SlackAPI
                         try
                         {
                             message = data.Deserialize<SlackSocketMessage>();
+                            message.RawMessage = data;
                         }
                         catch (JsonException jsonExcep)
                         {
@@ -285,6 +286,7 @@ namespace SlackAPI
                         Type t = routes[message.type][message.subtype ?? "null"].GetMethodInfo().GetParameters()[0].ParameterType;
                         o = data.Deserialize(t);
                     }
+                    ((SlackSocketMessage)o).RawMessage = data;
                     routes[message.type][message.subtype ?? "null"].DynamicInvoke(o);
                 }
                 catch (Exception e)
@@ -340,15 +342,24 @@ namespace SlackAPI
                 ConnectionClosed();
 		}
     }
-
+    public class SlackSocketMessageAttachments
+    {
+        public string pretext;
+        public string fallback;
+    }
     public class SlackSocketMessage
     {
+        public string username;
+        public Dictionary<string, string> icons;
+        public List<SlackSocketMessageAttachments> attachments;
         public int id;
         public int reply_to;
         public string type;
         public string subtype;
         public bool ok = true;
         public Error error;
+        public string RawMessage;
+
     }
 
     public class Error
